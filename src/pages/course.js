@@ -3,6 +3,7 @@ import { url, getOneCourse, addNewStudent, getAllStudents, deleteStudent } from 
 function displayCourse(course) {
 
   const courseDetail = document.querySelector(".courseDetail")
+  courseDetail.style.backgroundImage = `url(${url}/api/files/${course.collectionId}/${course.id}/${course.thumbnail})`
   courseDetail.innerHTML = `
   <div class="overlay">
       <h4>Title: ${course.title}</h4>
