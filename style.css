@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: darkblue;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 5px solid white;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+header {
+  height: 100px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.course {
+  padding: 10px;
+  border: 2px solid white;
+  width: 250px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.course img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.banner {
+  height: 400px;
+  background-image: url('./images/sample.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-content: center;
+}
+.banner h2 {
+  font-size: 48px;
+  color: red;
+}
+
+.coursesWrapper {
+  padding: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#detailBtn,
+#deleteBtn {
+  text-align: center;
+  background-color: green;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#deleteBtn {
+  background-color: red;
+}
+
+#addStudentForm {
+  padding: 15px;
+  border: 2px solid white;
+  width: 400px;
+  margin: 15px auto;
+  display: grid;
+  gap: 15px;
+
+}
+input {
+  padding: 5px;
+  outline: 0;
+  border-radius: 5px;
+}
+
+
+.courseDetail {
+  height: 400px;
+  background-image: url('./images/sample.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  display: grid;
+  gap: 25px;
+  place-content: center;
+
+}
+
+.overlay > * {
+  transform: scale(1.5);
+}
+
+table {
+  width: 90%;
+  margin: 25px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid white;
+}
+
+th {
+  height: 50px;
+  font-size: 18px;
+  background-color: darkcyan;
+}
+
+td {
+  height: 35px;
+  padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightslategray;
+}
+
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background-color: lightslategray;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
+table #deleteBtn {
+  width: 100%;
+  color: white;
+}

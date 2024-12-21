@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FINAL EXAM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" id="">RANDOM COURSE</a>
+    </div>
+
+    <!-- <div class="linksWrapper">
+      <a href="index.html">HOME</a>
+      <a href="course.html">COURSE</a>
+      <a href="lesson.html">LESSON</a>
+    </div> -->
+  </header>
+
+  <div class="courseDetail">
+
+    <div class="overlay">
+      <h4>Title</h4>
+      <p>Description</p>
+      <p>Duration</p>
+      <p>Start Date: </p>
+      <h2>Price: </h2>
+    </div>
+
+  </div>
+
+  <div class="formWrapper">
+    <h4 class="section-title">Add Student to the Course</h4>
+    <form id="addStudentForm">
+      <input type="text" id="name" placeholder="Enter student name">
+      <input type="text" id="age" placeholder="Enter your age">
+      <input type="email" id="email" placeholder="Enter student email">
+      <button id="registerBtn" type="submit">Register</button>
+    </form>
+  </div>
+
+
+  <div id="currentStudent">
+
+    <h4 class="section-title">Students Table</h4>
+    <table class="studentTable">
+      <thead>
+        <tr>
+          <th>N<sup>o</sup></th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 
+        
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <button id="deleteBtn">Delete</button>
+          </td>
+        </tr>
+      
+        -->
+
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <footer>
+    <h4>&copysr; ALL RIGHT RESERVED 2025</h4>
+  </footer>
+
+  <script type="module" src="./src/pages/course.js"></script>
+</body>
+</html>
